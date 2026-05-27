@@ -1,0 +1,61 @@
+/* ABOUT PAGE - simple styles (no CSS Grid) */
+
+.page-section {
+	padding: 60px 0;
+}
+
+.page-section .container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/* Skills section: black background, flex-based layout */
+.skills {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 60px 0;
+}
+
+.skills .container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+
+.skills-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	width: 100%;
+}
+
+.card {
+	background: #111;
+	padding: 1.25rem;
+	border-radius: 10px;
+	min-width: 200px;
+	flex: 1 1 220px;
+	max-width: 320px;
+	text-align: center;
+	color: #fff;
+}
+
+.card h3 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.1rem;
+}
+
+.card p {
+	margin: 0;
+	opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+	.card {
+		flex: 1 1 100%;
+	}
+}
+
